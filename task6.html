@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      div.main {
+        border: 2px solid black;
+        padding: 5px;
+        padding-top: none;
+      }
+      div.other {
+        font-weight: bold;
+      }
+      input {
+        border: none;
+        font-family: cursive;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+      }
+      h2 {
+        font-family: serif;
+        background-color: red;
+        padding: 3px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Question 7 -->
+    <div class="main">
+      <form>
+        <h2>Yes! I want to subscribe to <i>Mag-O-Zine</i></h2>
+        <div class="name">
+          <table>
+            <tr>
+              <td>
+                <input type="text" id="First Name" value="Joe" />
+              </td>
+              <td><input type="text" id="Last Name" value="Schreggie" /></td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="First Name">First Name</label>
+              </td>
+              <td><label for="Last Name">Last Name</label></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="text"
+                  id="Address"
+                  value="1001 Washington Street"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="Address">Address</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="City" value="Auria" /></td>
+              <td><input type="text" id="State" value="CA" /></td>
+              <td><input type="text" id="Zip" value="99999" /></td>
+            </tr>
+            <tr>
+              <td><label for="City">City</label></td>
+              <td><label for="State">State</label></td>
+              <td><label for="Zip">Zip</label></td>
+            </tr>
+          </table>
+        </div>
+        <div class="other">
+          <label for="subscribe">Subscribe for:</label>
+          <input type="checkbox" id="1year" checked />
+          <label for="1year">1 year ($19.95)</label>
+
+          <input type="checkbox" id="2years" />
+          <label for="2years">2 years ($35.00)</label><br />
+
+          <label for="informtaion">Send me more information about:</label><br />
+          <input type="checkbox" id="cpzine" checked />
+          <label for="cpzine">Computer-Zine</label><br />
+
+          <input type="checkbox" id="fzine" />
+          <label for="fzine">Fizhing-Zine</label><br />
+
+          <input type="checkbox" id="czine" checked />
+          <label for="czine">Cat-O-Zine</label><br />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
